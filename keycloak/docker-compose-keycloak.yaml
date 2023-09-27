@@ -1,0 +1,16 @@
+version: "3.7"
+
+volumes:
+  keycloak:
+
+services:
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:22.0.3
+    ports:
+      - 8080:8080
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    volumes:
+      - ./keycloak_data:/opt/keycloak/data/
