@@ -23,4 +23,5 @@ docker run -p 8080:8080 -v ./keycloak/keycloak_data:/opt/keycloak/data/h2 -e KEY
 1. access to fastAPI swagger using http://127.0.0.1:8081/docs
 2. get token using authorize
 3. make your query for `/secure`
-4. 
+![demo](https://github.com/ilyesAj/keycloak-fastAPI-integration/blob/main/images/fastapi.gif)
+
